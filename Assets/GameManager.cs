@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour {
 
+    public int awesomeTurkeys;
+
     private MapGenerator _MapGenerator;
 
     void Start ()
@@ -14,7 +16,12 @@ public class GameManager : MonoBehaviour {
     }
 	
 	// Update is called once per frame
-	void Update () {
-		
+	void Update ()
+    {
+        if (Input.GetKeyDown ("space"))
+        {
+            awesomeTurkeys++;
+            Debug.Log("The number of awesome turkeys = " + awesomeTurkeys);
+        }
 	}
 }
