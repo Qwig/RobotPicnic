@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour {
 
-    public int awesomeTurkeys;
+    public int awesomeTurkeys; //this is a test, you have passed
 
     private MapGenerator _MapGenerator;
 
