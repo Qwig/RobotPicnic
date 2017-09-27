@@ -21,6 +21,7 @@ public class EventManager : MonoBehaviour {
         buttons = GetComponentsInChildren<Button>();
         buttons[1].onClick.AddListener(Outcome1);
         buttons[2].onClick.AddListener(Outcome2);
+        buttons[3].onClick.AddListener(Outcome3);
 
         eventTextBoxes = GetComponentsInChildren<Text>();
         eventText = eventTextBoxes[0];
@@ -44,6 +45,14 @@ public class EventManager : MonoBehaviour {
     void Outcome2()
     { 
         eventText.text = "You have chosen the second button";
+
+        choiceBox.SetActive(false);
+        confirmBox.SetActive(true);
+    }
+
+    void Outcome3()
+    { 
+        eventText.text = "You have chosen the third button";
 
         choiceBox.SetActive(false);
         confirmBox.SetActive(true);
