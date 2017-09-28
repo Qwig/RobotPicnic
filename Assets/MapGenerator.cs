@@ -8,20 +8,38 @@ public class MapGenerator : MonoBehaviour
     public int NodeCount;
     private Transform Map;
 
-    public void CreateMap()
-    {
-        Map = new GameObject("Map").transform;
-        for (int i = 0; i < NodeCount; i++)
-        {
-            var x = Random.Range(0f, 10f);
-            var y = Random.Range(0f, 10f);
-            GameObject instance = Instantiate(Node, new Vector3(x, y, 0f), Quaternion.identity) as GameObject;
-            instance.transform.SetParent(Map);
-            var node = instance.GetComponent<Node>();
-            node.X = x;
-            node.Y = y;
+   
+			public void CreateMap()
+			{
+				List<Vector3> coordinates = new List<Vector3>();
+
+				for (int j = -5; j <= 5;j++)
+				{
+					for (int k = -5; k <= 5;k++)
+					{
+						Vector3 coordinate = new Vector3 (j, k, 0f); 
+						coordinates.Add(coordinate);
+
+					}
+				}
+
+
+				Map = new GameObject("Map").transform;
+				for (int i = 0; i < NodeCount; i++)
+				{
+
+
+					Vector3 target = coordinates [Random.Range (0, coordinates.Count)];
+					GameObject instance = Instantiate (Node, target, Quaternion.identity) as GameObject;
+					instance.transform.SetParent (Map);
+					var node = instance.GetComponent<Node> ();
+					node.X = target.x;
+					node.Y = target.y;
+					coordinates.Remove (target);
+
+
+
+				}
+
+			}
         }
-
-    }
-
-}
