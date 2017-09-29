@@ -1,0 +1,28 @@
+> Search the grocery store for picnic provisions
+;> You sneak into the grocery store...
+> It seems to be unguarded.
+> You collect some provisions!
+> Your confidence increases.
+;> You sneak into the grocery store...
+> It’s a trap!
+> You flee from the angry humans.
+> You lose confidence.
+|> Help the Venderbot free from the rubble
+;> You attempt to clear away the rubble...
+> Progress is slow, but you are determined.
+> Eventually the Venderbot is set free!
+> The grateful Venderbot joins your picnic quest!
+;> You attempt to clear away the rubble...
+> A large piece of rubble is dislodged...
+> You narrowly avoid being crushed.
+> The Venderbot is gravely damaged.
+> You lose confidence.
+|> Scan the quiet house for picnic supplies
+;> You analyse the energy signatures of the house...
+> It seems the coast is clear.
+> You infiltrate the pantry and retrieve a large hamper!
+> Your confidence increases.
+;> You analyse the energy signatures of the house...
+> An alarm starts to blare.
+> You retreat emptyhanded.
+> You lose confidence.

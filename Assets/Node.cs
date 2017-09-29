@@ -13,11 +13,11 @@ public class Node : MonoBehaviour
 
     void OnMouseDown()
     {
-        if (!eventUI.eventResolving) 
+        if (!eventUI.eventResolving)        // Forbids movement during an event
         {
-            eventUI.eventResolving = true;
-            eventUI.NewEvent(beenHere);
-            beenHere = true;
+            eventUI.eventResolving = true; 
+            eventUI.NewEvent(beenHere);     
+            beenHere = true;                
             Player.Move(X, Y);
         }
     }
