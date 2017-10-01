@@ -1,3 +1,25 @@
+<<<<<<< .merge_file_5tGTP1
+# =============== #
+# Unity generated #
+# =============== #
+Temp/
+Library/
+
+# ===================================== #
+# Visual Studio / MonoDevelop generated #
+# ===================================== #
+ExportedObj/
+obj/
+*.svd
+*.userprefs
+/*.csproj
+*.pidb
+*.suo
+/*.sln
+*.user
+*.unityproj
+*.booproj
+=======
 /[Ll]ibrary/
 /[Tt]emp/
 /[Oo]bj/
@@ -32,3 +54,4 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
+>>>>>>> .merge_file_GhNh0B

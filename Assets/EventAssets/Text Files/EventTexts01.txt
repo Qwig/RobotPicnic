@@ -1,0 +1,127 @@
+> Search the grocery store for picnic provisions
+;> You sneak into the grocery store...
+> It seems to be unguarded.
+> You collect some provisions!
+> Your confidence increases.
+;> You sneak into the grocery store...
+> It’s a trap!
+> You flee from the angry humans.
+> You lose confidence.
+|> Help the Venderbot free from the rubble
+;> You attempt to clear away the rubble...
+> Progress is slow, but you are determined.
+> Eventually the Venderbot is set free!
+> The grateful Venderbot joins your picnic quest!
+;> You attempt to clear away the rubble...
+> A large piece of rubble is dislodged...
+> You narrowly avoid being crushed.
+> The Venderbot is gravely damaged.
+> You lose confidence.
+|> Scan the quiet house for picnic supplies
+;> You analyse the energy signatures of the house...
+> It seems the coast is clear.
+> You infiltrate the pantry and retrieve a large hamper!
+> Your confidence increases.
+;> You analyse the energy signatures of the house...
+> An alarm starts to blare.
+> You retreat emptyhanded.
+> You lose confidence.
+|> Make toast for the human refugees
+;>You approach the human barricades...
+> The humans are weary and greet you with a sad smile.
+> They have not seen toast in a long time.
+> You feel renewed with purpose!
+> Your confidence increases.
+;> You approach the human barricades...
+> They are hostile to all robots!
+> You are bombarded by rocks!
+> You scuttle to safety.
+> You lose confidence.
+|> Hack the Giant Death Robot
+;> You attempt to override the Giant Death Robot...
+> You are the brave little toaster that could!
+> The Giant Death Robot emits a happy sigh.
+> Your confidence increases.
+;> You attempt to override the Giant Death Robot...
+> It looks at you with pity and scorn.
+> You spend the rest of the day in a cardboard box.
+> You lose confidence.
+|> Siphon energy from the solar panels
+;> You meddle with the solar panel wiring...
+> You feel a surge of tasty energy!
+> Praise the sun!
+> Your confidence increases.
+;> You meddle with the solar panel wiring...
+> A painful surge of static leaves your circuits frazzled.
+> You feel dazed and confused.
+> You lose confidence.
+|> Emit a distress signal
+;> You send a lonely cry to the aether...
+> You are not alone little toaster!
+> Other appliances rally to your aid.
+> Your confidence increases.
+;> You send a lonely cry to the aether...
+> So  sad.
+> Feels bad man.
+> You lose confidence.
+|> Befriend an eccentric lamp
+;> You discuss matters of importance to the lamp community...
+> The lamp is more interested in jumping excitedly...
+> You entertain the lamp by shooting toast projectiles!
+> The lamp joins your picnic quest.
+> Your confidence increases.
+;> You discuss matters of importance to the lamp community...
+> A grievous faux pas!
+> The lamp blows raspberries at you and leaves you in the dark.
+> You lose confidence.
+|> Appeal to the Rat King for aid
+;> You bring magnificent gifts to the Rat King...
+> The King is merciful and generous!
+> The rats show you a secret passage through the city.
+> Your confidence increases.
+;> You bring magnificent gifts to the Rat King...
+> The King thinks you would make a nice ornament!
+> You escape after days of unspeakable servitude.
+> You lose confidence.
+|> Scrounge material from the McYuckys outlet
+;> You cautiously sneak towards the counter...
+> There is an old lady here.
+> She has dropped her purse!
+> You return the purse, and she knits you a nice hat!
+> Your confidence increases.
+;> You cautiously sneak towards the counter...
+> Terrible vagrants appear from behind a table!
+> You are covered in vomit.
+> You lose confidence.
+|> Comfort a depressed Espressobot
+;> You tell the Espressobot that everything will be okay...
+> The Espressobot pulls itself together!
+> This is going to be the best picnic ever!
+> Your confidence increases.
+;> You tell the Espressobot that everything will be okay...
+> You don't believe it yourself.
+> All you wanted was a picnic.
+> Robots can't even have picnics.
+> You lose confidence.
+|> Salvage picnic wares from a trash can
+;> Maybe there is something nice in this rubbish bin...
+> You hear a startled cry!
+> Buried under piles of trash is an old printer!
+> The cantankerous printer joins your picnic adventure!
+> Your confidence increases.
+;> Maybe there is something nice in this rubbish bin...
+> You discover a world of cosmic horrors that can never be unseen.
+> ...
+> ...
+> You lose confidence.
+|> Recharge from a dubious power socket
+;> The sparks in the wiring look friendly...
+> You are drunk with power!
+> You can do anything!
+> Your confidence increases.
+;> The sparks in the wiring look friendly...
+> ...
+> You cannot remember what happened.
+> You feel very cold.
+> You are now addicted to dirty power.
+> You lose confidence.
