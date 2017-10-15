@@ -19,12 +19,15 @@ public class Event
 {
     public int ob, gain, loss;
     public string actiontxt, passtxt, failtxt;
+    public bool isEncounter;
 
     public Event(int o, int add, int sub, 
-        string act, string pass, string fail)
+        string act, string pass, string fail,
+        bool encounter)
         {
             ob = o; gain = add; loss = sub;
             actiontxt = act; passtxt = pass; failtxt = fail;
+            isEncounter = encounter;
         }
 }
 
@@ -67,10 +70,13 @@ public class EventManager : MonoBehaviour {
         
         for (int i = 0; i < eventTxts.Length; i++)
         {
-            string[] apf = eventTxts[i].Split(';');            
+            string[] apf = eventTxts[i].Split(';');
+            bool excitement = true;
+            if (1 == Random.Range(0, 2))
+                excitement = false;
             allEvents.Add(new Event(
                 Random.Range(2,7), Random.Range(1,4), Random.Range(1,4),
-                apf[0], apf[1], apf[2]));
+                apf[0], apf[1], apf[2], excitement));
         }
     }
 
@@ -128,32 +134,37 @@ public class EventManager : MonoBehaviour {
 
     void EventChoice (int eventn)
     {
-        if (Diceroll(skill, (currentEvents[eventn].ob)))
-        {
-            
-            energy = energy + (currentEvents[eventn].gain);
-            textBoxes[1].text = "> Continue...";
-            textBoxes[0].text = currentEvents[eventn].passtxt
-            + "\r\n\r\n> Energy levels at " + energy + "%.";
-        }
+        if (currentEvents[eventn].isEncounter)
+            Application.LoadLevel("EncounterView");
         else
         {
-            energy = energy - (currentEvents[eventn].loss);
-            if (energy <= 0)
+            if (Diceroll(skill, (currentEvents[eventn].ob)))
             {
-                energy = 0;
-                textBoxes[1].text = "> RUST IN PEACE";
+
+                energy = energy + (currentEvents[eventn].gain);
+                textBoxes[1].text = "> Continue...";
+                textBoxes[0].text = currentEvents[eventn].passtxt
+                + "\r\n\r\n> Energy levels at " + energy + "%.";
             }
-            textBoxes[0].text = currentEvents[eventn].failtxt
-            + "\r\n\r\n> Energy levels at " + energy + "%.";
+            else
+            {
+                energy = energy - (currentEvents[eventn].loss);
+                if (energy <= 0)
+                {
+                    energy = 0;
+                    textBoxes[1].text = "> RUST IN PEACE";
+                }
+                textBoxes[0].text = currentEvents[eventn].failtxt
+                + "\r\n\r\n> Energy levels at " + energy + "%.";
 
+            }
+
+            allEvents.AddRange(currentEvents);
+            currentEvents.RemoveRange(0, currentEvents.Count);
+
+            choiceBox.SetActive(false);
+            confirmBox.SetActive(true);
         }
-
-        allEvents.AddRange(currentEvents);
-        currentEvents.RemoveRange(0,currentEvents.Count);
-
-        choiceBox.SetActive(false);
-        confirmBox.SetActive(true);
     }
 
     void EventEnd ()

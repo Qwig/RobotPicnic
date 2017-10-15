@@ -6,6 +6,12 @@ TagManager:
   tags:
   - GameManager
   - EventUI
+  - SellButtons
+  - Test
+  - Hold
+  - HirePlagueDoctor
+  - Fight
+  - PicnicSupplies
   layers:
   - Default
   - TransparentFX

@@ -78,13 +78,27 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\CameraControls.cs" />
-    <Compile Include="Assets\EventManager.cs" />
-    <Compile Include="Assets\GameManager.cs" />
-    <Compile Include="Assets\MapGenerator.cs" />
-    <Compile Include="Assets\MovingObject.cs" />
-    <Compile Include="Assets\Node.cs" />
-    <Compile Include="Assets\PlayerManager.cs" />
+    <Compile Include="Assets\Excitement.cs" />
+    <Compile Include="Assets\Scripts\Battle\BattleManager.cs" />
+    <Compile Include="Assets\Scripts\Battle\BattleToEncounter.cs" />
+    <Compile Include="Assets\Scripts\Encounter\EncounterManager.cs" />
+    <Compile Include="Assets\Scripts\Encounter\EncounterToBattle.cs" />
+    <Compile Include="Assets\Scripts\Encounter\EncounterToMap.cs" />
+    <Compile Include="Assets\Scripts\Encounter\Player.cs" />
+    <Compile Include="Assets\Scripts\Encounter\Square.cs" />
+    <Compile Include="Assets\Scripts\Map\CameraControls.cs" />
+    <Compile Include="Assets\Scripts\Map\EventManager.cs" />
+    <Compile Include="Assets\Scripts\Map\GameManager.cs" />
+    <Compile Include="Assets\Scripts\Map\MapGenerator.cs" />
+    <Compile Include="Assets\Scripts\Map\MapToEncounter.cs" />
+    <Compile Include="Assets\Scripts\Map\MovingObject.cs" />
+    <Compile Include="Assets\Scripts\Map\Node.cs" />
+    <Compile Include="Assets\Scripts\Map\PlayerManager.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\EventAssets\Text Files\BeenHere1.txt" />
+    <None Include="Assets\EventAssets\Text Files\EventTexts01.txt" />
+    <None Include="Assets\EventAssets\Text Files\NewNode1.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
