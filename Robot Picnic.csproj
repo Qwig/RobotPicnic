@@ -13,11 +13,13 @@
     <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <TargetFrameworkProfile>Unity Subset v3.5</TargetFrameworkProfile>
-    <CompilerResponseFile></CompilerResponseFile>
+    <CompilerResponseFile>
+    </CompilerResponseFile>
     <UnityProjectType>Game:1</UnityProjectType>
     <UnityBuildTarget>StandaloneWindows:5</UnityBuildTarget>
     <UnityVersion>5.6.3p1</UnityVersion>
-    <RootNamespace></RootNamespace>
+    <RootNamespace>
+    </RootNamespace>
     <LangVersion>4</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -78,10 +80,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Excitement.cs" />
     <Compile Include="Assets\Scripts\Battle\BattleManager.cs" />
     <Compile Include="Assets\Scripts\Battle\BattleToEncounter.cs" />
+    <Compile Include="Assets\Scripts\Battle\Excitement.cs" />
     <Compile Include="Assets\Scripts\Encounter\EncounterManager.cs" />
+    <Compile Include="Assets\Scripts\Encounter\EncounterSaveData.cs" />
+    <Compile Include="Assets\Scripts\Encounter\EncounterSaveObject.cs" />
     <Compile Include="Assets\Scripts\Encounter\EncounterToBattle.cs" />
     <Compile Include="Assets\Scripts\Encounter\EncounterToMap.cs" />
     <Compile Include="Assets\Scripts\Encounter\Player.cs" />

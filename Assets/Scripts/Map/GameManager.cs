@@ -13,6 +13,8 @@ public class GameManager : MonoBehaviour {
         _MapGenerator = GetComponent<MapGenerator>();
 
         _MapGenerator.CreateMap();
+
+        EncounterSaveObject.data = new EncounterSaveData();
     }
 	
 	// Update is called once per frame

@@ -18,8 +18,17 @@ public class EncounterManager : MonoBehaviour
     {
         map = new GameObject[size, size];
         encounterMap = new GameObject("EncounterMap").transform;
-        CreateMap();
+        if (EncounterSaveObject.data.map == null)
+        {
+            CreateMap();
+        }
+        else
+        {
+            map = EncounterSaveObject.data.map;
+        }
         RenderMap();
+        
+
 
 
 	}
@@ -57,6 +66,7 @@ public class EncounterManager : MonoBehaviour
 
         map[UnityEngine.Random.Range(0, size), UnityEngine.Random.Range(0, size)] = PicnicSupplies;
 
+        EncounterSaveObject.data.map = map;
 
     }
 }
