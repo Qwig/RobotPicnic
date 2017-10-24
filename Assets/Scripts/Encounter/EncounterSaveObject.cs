@@ -2,9 +2,10 @@
 
 public class EncounterSaveObject : MonoBehaviour
 {
-    public static EncounterSaveData data;
+    public static EncounterSaveData data = new EncounterSaveData();
 
     public EncounterSaveObject Instance;
+
 
     void Awake()
     {
@@ -18,5 +19,14 @@ public class EncounterSaveObject : MonoBehaviour
         {
             Destroy(gameObject);
         }
+    }
+    public void SaveGame()
+    {
+
+    }
+
+    public void LoadGame()
+    {
+
     }
 }

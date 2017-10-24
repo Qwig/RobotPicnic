@@ -16,7 +16,7 @@ public class PlayerManager : MovingObject
 
 
     // Use this for initialization
-    void Start ()
+    public override void Start ()
     {
         base.Start();
 	}

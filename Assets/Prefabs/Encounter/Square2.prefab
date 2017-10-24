@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 114889885021009888}
   m_Layer: 0
   m_Name: Square2
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -81,7 +81,6 @@ MonoBehaviour:
   X: 0
   Y: 0
   Player: {fileID: 0}
-  beenHere: 0
 --- !u!212 &212467959692618462
 SpriteRenderer:
   m_ObjectHideFlags: 1

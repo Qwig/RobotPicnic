@@ -88,6 +88,7 @@
     <Compile Include="Assets\Scripts\Encounter\EncounterSaveObject.cs" />
     <Compile Include="Assets\Scripts\Encounter\EncounterToBattle.cs" />
     <Compile Include="Assets\Scripts\Encounter\EncounterToMap.cs" />
+    <Compile Include="Assets\Scripts\Encounter\Enemy.cs" />
     <Compile Include="Assets\Scripts\Encounter\Player.cs" />
     <Compile Include="Assets\Scripts\Encounter\Square.cs" />
     <Compile Include="Assets\Scripts\Map\CameraControls.cs" />

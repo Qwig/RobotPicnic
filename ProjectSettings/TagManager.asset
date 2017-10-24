@@ -12,6 +12,8 @@ TagManager:
   - HirePlagueDoctor
   - Fight
   - PicnicSupplies
+  - Wall
+  - DarkToasto
   layers:
   - Default
   - TransparentFX

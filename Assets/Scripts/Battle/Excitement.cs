@@ -5,6 +5,7 @@ using UnityEngine;
 public class Excitement : MonoBehaviour
 {
     private Rigidbody2D rb2d;
+    public int speed = 100;
 	// Use this for initialization
 	void Start ()
     {
@@ -14,6 +15,6 @@ public class Excitement : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
     {
-        rb2d.transform.Rotate(0, 0, 100 * Time.deltaTime);
+        rb2d.transform.Rotate(0, 0, speed * Time.deltaTime);
 	}
 }

@@ -5,17 +5,16 @@ using System.Collections;
 public abstract class MovingObject : MonoBehaviour
 {
 
-    public float moveTime = 0.3f;           //Time it will take object to move, in seconds.
+    public float moveTime = 2000f;           //Time it will take object to move, in seconds.
     public LayerMask blockingLayer;         //Layer on which collision will be checked.
 
-    internal bool myTurn = true;
     private BoxCollider2D boxCollider;      //The BoxCollider2D component attached to this object.
-    private Rigidbody2D rb2D;               //The Rigidbody2D component attached to this object.
+    internal Rigidbody2D rb2D;               //The Rigidbody2D component attached to this object.
     private float inverseMoveTime;          //Used to make movement more efficient.
-
+    public bool YourTurnEncounter = true;
 
     //Protected, virtual functions can be overridden by inheriting classes.
-    protected virtual void Start()
+    public virtual void Start()
     {
 
         //Get a component reference to this object's Rigidbody2D
@@ -31,8 +30,9 @@ public abstract class MovingObject : MonoBehaviour
     protected void ActuallyMove(float xDir, float yDir)
     {
         // Calculate end position based on the direction parameters passed in when calling Move.
+        YourTurnEncounter = false;
         Vector2 end = new Vector2(xDir, yDir);
-            StartCoroutine(SmoothMovement(end));
+        StartCoroutine(SmoothMovement(end));      
     }
 
 
@@ -58,5 +58,6 @@ public abstract class MovingObject : MonoBehaviour
             //Return and loop until sqrRemainingDistance is close enough to zero to end the function
             yield return null;
         }
+        YourTurnEncounter = true;
     }
 }
