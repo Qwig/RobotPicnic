@@ -7,28 +7,32 @@ public class BattleManager : MonoBehaviour {
 
     public GameObject winButton;
     public GameObject background;
-    public GameObject soundManager;
-    public GameObject epicSoundManager;
+    public GameObject musicPlayer;
     public GameObject sprite;
     public Sprite darkToasto;
 
-    // Use this for initialization
+    private AudioSource[] musicTracks;
+    private AudioSource testChaChing;
+
     void Start ()
     {
-		if(EncounterSaveObject.data.battleType == "Epic")
+        winButton.SetActive(false);
+        musicTracks = musicPlayer.GetComponents<AudioSource>();
+        testChaChing = GetComponent<AudioSource>();
+
+        if (EncounterSaveObject.data.battleType == "Epic")
         {
-            Destroy(winButton);
             background.GetComponent<Excitement>().speed = 20;
             sprite.GetComponent<SpriteRenderer>().sprite = darkToasto;
-            soundManager.GetComponent<AudioSource>().mute = true;
-            epicSoundManager.GetComponent<AudioSource>().Play() ;
+            musicTracks[1].Play();
         }
+        else
+            musicTracks[0].Play();
+	}
 
-	}
-	
-	// Update is called once per frame
-	void Update ()
+    public void PurchaseWinButton()
     {
-		
-	}
+        testChaChing.Play();
+        winButton.SetActive(true);
+    }
 }

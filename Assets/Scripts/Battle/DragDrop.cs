@@ -4,12 +4,16 @@ using UnityEngine;
 
 public class DragDrop : MonoBehaviour {
 
+    public GameObject battleManager;
+
 	private Vector3 offset;
 	private AudioSource audio;
+    private BattleManager battleTask;
 
 	void Start()
 	{
 		audio = GetComponent<AudioSource>();
+        battleTask = battleManager.GetComponent<BattleManager>();
 	}
 
 	void OnMouseDown()
@@ -32,9 +36,8 @@ public class DragDrop : MonoBehaviour {
 		 {
 			 if (hit.collider.name == "InApp Store")
 			 {
-				audio.Play();			
-				// Doesn't work because the object playing the sound is deleted while the sound is playing
-				Destroy(gameObject);
+                battleTask.PurchaseWinButton();
+                Destroy(gameObject);
 			 }
          }
 	}
