@@ -345,6 +345,7 @@ GameObject:
   m_Component:
   - component: {fileID: 177308915}
   - component: {fileID: 177308914}
+  - component: {fileID: 177308916}
   m_Layer: 0
   m_Name: Toasto
   m_TagString: Untagged
@@ -406,6 +407,31 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &177308916
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 177308913}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.64, y: 0.64}
+    newSize: {x: 0.64, y: 0.64}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.64, y: 0.64}
+  m_EdgeRadius: 0
 --- !u!1 &197559404
 GameObject:
   m_ObjectHideFlags: 0
@@ -439,6 +465,7 @@ MonoBehaviour:
   musicPlayer: {fileID: 1838933676}
   sprite: {fileID: 177308913}
   darkToasto: {fileID: 21300000, guid: 0ec5ea3b937704d45b928008512279bc, type: 3}
+  richToasto: {fileID: 21300000, guid: f285ac691dd23bc46a695ae8559f4a43, type: 3}
 --- !u!4 &197559406
 Transform:
   m_ObjectHideFlags: 0

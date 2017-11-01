@@ -10,11 +10,12 @@ public class BattleManager : MonoBehaviour {
     public GameObject musicPlayer;
     public GameObject sprite;
     public Sprite darkToasto;
+    public Sprite richToasto;
 
     private AudioSource[] musicTracks;
     private AudioSource testChaChing;
 
-    void Start ()
+    void Start()
     {
         winButton.SetActive(false);
         musicTracks = musicPlayer.GetComponents<AudioSource>();
@@ -28,11 +29,17 @@ public class BattleManager : MonoBehaviour {
         }
         else
             musicTracks[0].Play();
-	}
+    }
 
     public void PurchaseWinButton()
     {
         testChaChing.Play();
         winButton.SetActive(true);
+    }
+
+    public void PurchaseToastoUpgrade()
+    {
+        testChaChing.Play();
+        sprite.GetComponent<SpriteRenderer>().sprite = richToasto;
     }
 }

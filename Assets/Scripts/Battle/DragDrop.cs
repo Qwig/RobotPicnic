@@ -39,6 +39,11 @@ public class DragDrop : MonoBehaviour {
                 battleTask.PurchaseWinButton();
                 Destroy(gameObject);
 			 }
+             else if (hit.collider.name == "Toasto")
+            {
+                battleTask.PurchaseToastoUpgrade();
+                Destroy(gameObject);
+            }
          }
 	}
 }
